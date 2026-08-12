@@ -90,32 +90,22 @@ async function askEthicsTutor(
 
   try {
 
-    const response =
-      await fetch(API_URL, {
+const response =
+await fetch(API_URL, {
 
-        method: "POST",
+  method: "POST",
 
-        headers: {
-          "Content-Type":
-            "application/json"
-        },
+  headers: {
+    "Content-Type":
+      "application/json"
+  },
 
-        body: JSON.stringify({
+  body: JSON.stringify({
+    question: question,
+    perspective: perspective
+  })
 
-          question:
-            perspective === "ALL"
-
-            ? question
-
-            :
-            `Answer this question ONLY from the perspective of ${perspective}.
-
-Question:
-${question}`
-
-        })
-
-      });
+});
 
 
     const data =
