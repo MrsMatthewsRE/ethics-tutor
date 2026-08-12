@@ -1,4 +1,51 @@
- <h2>Ethics Tutor Response</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ethics AI Tutor</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header>
+      <h1>Ethics AI Tutor</h1>
+
+      <p>
+        Ask an ethical question and see how different ethical
+        theories and thinkers might respond.
+      </p>
+    </header>
+
+    <section class="question-card">
+
+      <label for="question">
+        Ask your ethics question
+      </label>
+
+      <textarea
+        id="question"
+        placeholder="For example: Is euthanasia morally acceptable?"
+      ></textarea>
+
+      <button id="askButton">
+        Ask Ethics Tutor
+      </button>
+
+    </section>
+
+    <section id="loading" class="hidden">
+      <p>Thinking about your question...</p>
+    </section>
+
+    <section id="answerSection" class="hidden">
+
+      <h2>Ethics Tutor Response</h2>
 
       <div id="answer"></div>
 
