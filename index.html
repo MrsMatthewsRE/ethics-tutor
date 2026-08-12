@@ -4,56 +4,254 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ethics AI Tutor</title>
+  <title>Ask Dr Ethos</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <main class="container">
+<div class="app">
 
-    <header>
-      <h1>Ethics AI Tutor</h1>
+  <header class="hero">
+    <h1>Ask Dr Ethos</h1>
+    <p>Your AI guide to ethics, philosophy and moral thinking.</p>
+  </header>
 
-      <p>
-        Ask an ethical question and see how different ethical
-        theories and thinkers might respond.
-      </p>
-    </header>
+  <main class="ethics-layout">
 
-    <section class="question-card">
+    <!-- LEFT SIDE -->
+    <section class="option-column">
 
-      <label for="question">
-        Ask your ethics question
-      </label>
+      <h2>Ethical Views</h2>
 
-      <textarea
-        id="question"
-        placeholder="For example: Is euthanasia morally acceptable?"
-      ></textarea>
+      <button class="ethics-button pink"
+        data-perspective="Biblical Ethics">
+        📖
+        <span>Biblical Ethics</span>
+      </button>
 
-      <button id="askButton">
-        Ask Ethics Tutor
+      <button class="ethics-button blue"
+        data-perspective="Deontology">
+        ⚖️
+        <span>Deontology</span>
+      </button>
+
+      <button class="ethics-button green"
+        data-perspective="Utilitarianism">
+        🌍
+        <span>Utilitarianism</span>
+      </button>
+
+      <button class="ethics-button orange"
+        data-perspective="Preference Utilitarianism">
+        👥
+        <span>Preference Utilitarianism</span>
+      </button>
+
+      <button class="ethics-button purple"
+        data-perspective="Situation Ethics">
+        ❤️
+        <span>Situation Ethics</span>
+      </button>
+
+      <button class="ethics-button teal"
+        data-perspective="Narrative Ethics">
+        📚
+        <span>Narrative Ethics</span>
+      </button>
+
+      <button class="ethics-button lime"
+        data-perspective="Virtue Ethics">
+        🏛️
+        <span>Virtue Ethics</span>
       </button>
 
     </section>
 
-    <section id="loading" class="hidden">
-      <p>Thinking about your question...</p>
+
+    <!-- CENTRE -->
+    <section class="centre">
+
+      <div class="robot-area">
+
+        <div id="robot" class="robot">
+
+          <div class="antenna">
+            <div class="antenna-light"></div>
+          </div>
+
+          <div class="robot-head">
+
+            <div class="robot-screen">
+
+              <div class="eyes">
+                <div class="eye">
+                  <div class="pupil"></div>
+                </div>
+
+                <div class="eye">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+
+              <div id="robotMouth" class="mouth"></div>
+
+            </div>
+
+          </div>
+
+          <div class="neck"></div>
+
+          <div class="robot-body">
+
+            <div class="body-title">
+              DR
+              <br>
+              ETHOS
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="robotStatus" class="robot-status">
+          Ready for your question!
+        </div>
+
+      </div>
+
+
+      <section class="ask-panel">
+
+        <label for="question">
+          Ask Dr Ethos a question
+        </label>
+
+        <textarea
+          id="question"
+          placeholder="For example: Is euthanasia morally acceptable?"
+        ></textarea>
+
+        <p class="instruction">
+          Type your question, then choose an ethical view or thinker.
+        </p>
+
+        <button id="allViewsButton" class="all-button">
+          ✨ Answer With All Views
+        </button>
+
+      </section>
+
     </section>
 
-    <section id="answerSection" class="hidden">
 
-      <h2>Ethics Tutor Response</h2>
+    <!-- RIGHT SIDE -->
+    <section class="option-column">
 
-      <div id="answer"></div>
+      <h2>Thinkers</h2>
+
+      <button class="thinker-button red"
+        data-perspective="Aristotle">
+        👤
+        <span>Aristotle</span>
+      </button>
+
+      <button class="thinker-button darkblue"
+        data-perspective="Thomas Aquinas">
+        👤
+        <span>Aquinas</span>
+      </button>
+
+      <button class="thinker-button green"
+        data-perspective="Peter Singer">
+        👤
+        <span>Peter Singer</span>
+      </button>
+
+      <button class="thinker-button gold"
+        data-perspective="Immanuel Kant">
+        👤
+        <span>Kant</span>
+      </button>
+
+      <button class="thinker-button purple"
+        data-perspective="Sam Harris">
+        👤
+        <span>Sam Harris</span>
+      </button>
+
+      <button class="thinker-button teal"
+        data-perspective="David Hume">
+        👤
+        <span>David Hume</span>
+      </button>
+
+      <button class="thinker-button red"
+        data-perspective="Richard Dawkins">
+        👤
+        <span>Richard Dawkins</span>
+      </button>
+
+      <button class="thinker-button orange"
+        data-perspective="Jeremy Bentham">
+        👤
+        <span>Bentham</span>
+      </button>
+
+      <button class="thinker-button blue"
+        data-perspective="John Stuart Mill">
+        👤
+        <span>Mill</span>
+      </button>
+
+      <button class="thinker-button pink"
+        data-perspective="Pope Leo">
+        👤
+        <span>Pope Leo</span>
+      </button>
+
+      <button class="thinker-button darkblue"
+        data-perspective="Archbishop of Canterbury">
+        👤
+        <span>Archbishop of Canterbury</span>
+      </button>
 
     </section>
 
   </main>
 
-  <script src="script.js"></script>
+
+  <section id="answerSection" class="answer-section hidden">
+
+    <div class="answer-top">
+
+      <div>
+        <p class="small-heading">DR ETHOS SAYS</p>
+        <h2 id="answerTitle">Ethics Tutor Response</h2>
+      </div>
+
+      <div class="speech-controls">
+
+        <button id="readButton">
+          🔊 Read Answer
+        </button>
+
+        <button id="stopButton">
+          ⏹ Stop
+        </button>
+
+      </div>
+
+    </div>
+
+    <div id="answer"></div>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
