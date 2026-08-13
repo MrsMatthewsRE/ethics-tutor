@@ -1365,3 +1365,21 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+/* Remove empty grid space */
+.hub-grid::before,
+.hub-grid::after {
+  display: none !important;
+}
+
+.hub-card:empty {
+  display: none !important;
+}
+
+/* Blue background */
+.hub-page {
+  background: #241e44 !important;
+}
+
+.hub {
+  background: transparent !important;
+}
