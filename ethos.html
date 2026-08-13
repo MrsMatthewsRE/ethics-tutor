@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Dr Ethos</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header class="hero">
+    <h1>Ask Dr Ethos</h1>
+    <p class="class-name">Mrs Matthews’ AI Asistant</p>
+    <p>Your AI guide to ethics, philosophy and moral thinking.</p>
+  </header>
+
+  <main class="ethics-layout">
+
+    <!-- LEFT SIDE -->
+    <section class="option-column">
+
+      <h2>Ethical Views</h2>
+
+      <button class="ethics-button pink"
+        data-perspective="Biblical Ethics">
+        📖
+        <span>Biblical Ethics</span>
+      </button>
+
+      <button class="ethics-button blue"
+        data-perspective="Deontology">
+        ⚖️
+        <span>Deontology</span>
+      </button>
+
+      <button class="ethics-button green"
+        data-perspective="Utilitarianism">
+        🌍
+        <span>Utilitarianism</span>
+      </button>
+
+      <button class="ethics-button orange"
+        data-perspective="Preference Utilitarianism">
+        👥
+        <span>Preference Utilitarianism</span>
+      </button>
+
+
+
+    </section>
+
+
+    <!-- CENTRE -->
+    <section class="centre">
+
+      <div class="robot-area">
+
+        <div id="robot" class="robot">
+
+          <div class="antenna">
+            <div class="antenna-light"></div>
+          </div>
+
+          <div class="robot-head">
+
+            <div class="robot-screen">
+
+              <div class="eyes">
+                <div class="eye">
+                  <div class="pupil"></div>
+                </div>
+
+                <div class="eye">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+
+              <div id="robotMouth" class="mouth"></div>
+
+            </div>
+
+          </div>
+
+          <div class="neck"></div>
+
+          <div class="robot-body">
+
+            <img src="RSD logo.jfif" class="robot-crest" alt="School crest">
+            
+            <div class="body-title">
+              DR
+              <br>
+              ETHOS
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="robotStatus" class="robot-status">
+          Ready for your question!
+        </div>
+
+      </div>
+
+
+      <section class="ask-panel">
+
+        <label for="question">
+          Ask Dr Ethos a question
+        </label>
+
+        <textarea
+          id="question"
+          placeholder="For example: Is euthanasia morally acceptable?"
+        ></textarea>
+
+        <p class="instruction">
+          Type your question, then choose an ethical view or thinker.
+        </p>
+
+       
+
+      </section>
+
+    </section>
+
+
+  <!-- RIGHT SIDE -->
+<section class="option-column">
+
+  <h2>More Ethical Views</h2>
+
+  <button class="ethics-button purple"
+    data-perspective="Situation Ethics">
+    ❤️
+    <span>Situation Ethics</span>
+  </button>
+
+  <button class="ethics-button teal"
+    data-perspective="Narrative Ethics">
+    📚
+    <span>Narrative Ethics</span>
+  </button>
+
+  <button class="ethics-button lime"
+    data-perspective="Virtue Ethics">
+    🏛️
+    <span>Virtue Ethics</span>
+  </button>
+
+  <button id="allViewsButton" class="all-button">
+    ✨ Answer With All Views
+  </button>
+
+</section>
+
+  </main>
+
+
+  <section id="answerSection" class="answer-section hidden">
+
+    <div class="answer-top">
+
+      <div>
+        <p class="small-heading">DR ETHOS SAYS</p>
+        <h2 id="answerTitle">Ethics Tutor Response</h2>
+      </div>
+
+      <div class="speech-controls">
+
+        <button id="readButton">
+          🔊 Read Answer
+        </button>
+
+        <button id="stopButton">
+          ⏹ Stop
+        </button>
+
+      </div>
+
+    </div>
+
+    <div id="answer"></div>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
