@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask the Philosopher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="philosopher-page">
+
+    <h1>Ask the Philosopher</h1>
+    <p class="philosopher-intro">
+      Type a question, then choose a thinker to answer it.
+    </p>
+
+    <section class="philosopher-question-box">
+
+      <textarea
+        id="philosopherQuestion"
+        placeholder="For example: Is euthanasia morally acceptable?"
+      ></textarea>
+
+    </section>
+
+    <section class="philosopher-grid">
+
+      <button class="philosopher-button" data-philosopher="Nietzsche">Nietzsche</button>
+      <button class="philosopher-button" data-philosopher="Jeremy Bentham">Jeremy Bentham</button>
+      <button class="philosopher-button" data-philosopher="John Stuart Mill">John Stuart Mill</button>
+      <button class="philosopher-button" data-philosopher="Peter Singer">Peter Singer</button>
+
+      <button class="philosopher-button" data-philosopher="Aristotle">Aristotle</button>
+      <button class="philosopher-button" data-philosopher="Plato">Plato</button>
+      <button class="philosopher-button" data-philosopher="Immanuel Kant">Immanuel Kant</button>
+      <button class="philosopher-button" data-philosopher="St Thomas Aquinas">St Thomas Aquinas</button>
+
+      <button class="philosopher-button" data-philosopher="Joseph Fletcher">Joseph Fletcher</button>
+      <button class="philosopher-button" data-philosopher="Elizabeth Anscombe">Elizabeth Anscombe</button>
+      <button class="philosopher-button" data-philosopher="Philippa Foot">Philippa Foot</button>
+      <button class="philosopher-button" data-philosopher="St Augustine">St Augustine</button>
+
+      <button class="philosopher-button" data-philosopher="John Locke">John Locke</button>
+      <button class="philosopher-button" data-philosopher="Richard Dawkins">Richard Dawkins</button>
+      <button class="philosopher-button" data-philosopher="Jesus">Jesus</button>
+      <button class="philosopher-button" data-philosopher="St Paul">St Paul</button>
+
+    </section>
+
+    <section id="philosopherAnswer" class="philosopher-answer hidden">
+      <h2 id="philosopherAnswerTitle"></h2>
+      <div id="philosopherAnswerText"></div>
+    </section>
+
+    <a href="index.html" class="home-button">← Back to RE Hub</a>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
