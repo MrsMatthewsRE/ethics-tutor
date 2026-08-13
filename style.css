@@ -1353,3 +1353,15 @@ textarea:focus {
 .jesus-answer.hidden {
   display: none;
 }
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+@media (max-width: 850px) {
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
