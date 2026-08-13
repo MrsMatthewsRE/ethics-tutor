@@ -419,25 +419,7 @@ body {
 
   z-index: 3;
 }
-.robot-body .body-title::before,
-.robot-body .body-title::after {
-  content: "";
-  position: absolute;
-  top: -40px;
-  width: 42px;
-  height: 70px;
-  border-top: 4px solid #d81b60;
-}
 
-.robot-body .body-title::before {
-  left: 35px;
-  transform: rotate(25deg);
-}
-
-.robot-body .body-title::after {
-  left: 78px;
-  transform: rotate(-25deg);
-}
 
 /* ROBOT STATUS */
 
