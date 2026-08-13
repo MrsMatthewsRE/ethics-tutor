@@ -73,5 +73,39 @@
     </div>
   </div>
 </div>
+  <script>
+  const peekRobot = document.getElementById("peekRobot");
+
+  const peekPositions = [
+    "peek-left",
+    "peek-right",
+    "peek-bottom-left",
+    "peek-bottom-right"
+  ];
+
+  function showPeekRobot() {
+    peekRobot.className = "peek-robot";
+
+    const randomPosition =
+      peekPositions[Math.floor(Math.random() * peekPositions.length)];
+
+    peekRobot.classList.add(randomPosition);
+
+    setTimeout(() => {
+      peekRobot.classList.add("show");
+    }, 100);
+
+    setTimeout(() => {
+      peekRobot.classList.remove("show");
+    }, 3500);
+
+    const nextPeek =
+      Math.floor(Math.random() * 12000) + 10000;
+
+    setTimeout(showPeekRobot, nextPeek);
+  }
+
+  setTimeout(showPeekRobot, 5000);
+</script>
 </body>
 </html>
