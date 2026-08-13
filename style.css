@@ -390,14 +390,16 @@ body {
 }
 
 .body-title {
+  position: absolute;
+  left: 18px;
+  bottom: 42px;
+
   color: white;
+  text-align: left;
 
-  text-align: center;
-
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 900;
-
-  line-height: 0.9;
+  line-height: 1;
 }
 
 
