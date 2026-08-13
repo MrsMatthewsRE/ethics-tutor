@@ -1026,3 +1026,162 @@ textarea:focus {
 .home-button:hover {
   transform: scale(1.05);
 }
+/* =========================
+   ASK THE PHILOSOPHER PAGE
+========================= */
+
+.philosopher-page {
+  min-height: 100vh;
+  padding: 50px 40px;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.8), transparent 35%),
+    linear-gradient(180deg, #f8edf2 0%, #f1e3e8 100%);
+  text-align: center;
+}
+
+.philosopher-page h1 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 84px);
+  color: #b00060;
+  letter-spacing: -3px;
+  text-shadow:
+    0 4px 0 white,
+    0 7px 10px rgba(0,0,0,0.18);
+}
+
+.philosopher-intro {
+  margin: 14px 0 30px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #241e44;
+}
+
+.philosopher-question-box {
+  width: min(760px, 92%);
+  margin: 0 auto 35px;
+}
+
+.philosopher-question-box textarea {
+  width: 100%;
+  min-height: 115px;
+  box-sizing: border-box;
+  padding: 18px;
+  resize: vertical;
+
+  font: inherit;
+  font-size: 17px;
+
+  background: white;
+  border: 3px solid #b00060;
+  border-radius: 20px;
+
+  outline: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.philosopher-question-box textarea:focus {
+  box-shadow:
+    0 0 0 4px rgba(176,0,96,0.12),
+    0 8px 20px rgba(0,0,0,0.12);
+}
+
+.philosopher-grid {
+  width: min(1100px, 96%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.philosopher-button {
+  min-height: 100px;
+  padding: 18px 14px;
+
+  border: 3px solid white;
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, #b00060, #d30071);
+
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow: 0 7px 15px rgba(0,0,0,0.18);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.philosopher-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.22);
+}
+
+.philosopher-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.philosopher-answer {
+  width: min(850px, 92%);
+  margin: 40px auto 20px;
+  padding: 28px;
+
+  background: white;
+  border: 3px solid #b00060;
+  border-radius: 24px;
+
+  text-align: left;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.14);
+}
+
+.philosopher-answer h2 {
+  margin-top: 0;
+  color: #b00060;
+}
+
+.philosopher-answer.hidden {
+  display: none;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 13px 24px;
+
+  background: #241e44;
+  color: white;
+
+  text-decoration: none;
+  font-weight: 800;
+
+  border-radius: 999px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.17);
+
+  transition: transform 0.18s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .philosopher-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .philosopher-page {
+    padding: 35px 18px;
+  }
+
+  .philosopher-grid {
+    grid-template-columns: 1fr;
+  }
+}
