@@ -328,17 +328,19 @@ body {
 }
 
 .robot-body {
-  width: 200px;
-  height: 170px;
+  width: 210px;
+  height: 185px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-radius: 38px 38px 60px 60px;
+  position: relative;
+
+  border-radius: 34px 34px 55px 55px;
 
   background:
-    linear-gradient(145deg, #b00060, #77003e);
+    linear-gradient(145deg, #5b4636, #2f241d);
 
   border: 5px solid #eee;
 
