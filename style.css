@@ -714,3 +714,152 @@ textarea:focus {
     align-items: flex-start;
   }
 }
+/* =========================
+   MRS MATTHEWS RE HUB
+========================= */
+
+.hub-page {
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at top, #fff7fa, #eadde1);
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #241e44;
+}
+
+.hub {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.hub-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hub-header h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 7vw, 90px);
+
+  color: #a60059;
+
+  text-shadow:
+    0 4px 0 white,
+    0 7px 10px rgba(0,0,0,0.18);
+}
+
+.hub-header p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hub-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+.hub-card {
+  min-height: 360px;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  background: white;
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,0.15);
+
+  border: 4px solid white;
+
+  text-decoration: none;
+  color: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ethos-card {
+  border-color: #a60059;
+}
+
+.ethos-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.22);
+}
+
+.progress-card {
+  opacity: 0.75;
+  border-color: #999;
+}
+
+.hub-icon {
+  font-size: 75px;
+  margin-bottom: 15px;
+}
+
+.hub-card h2 {
+  margin: 0 0 15px;
+
+  font-size: 34px;
+
+  color: #8e0050;
+}
+
+.hub-card p {
+  max-width: 420px;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hub-open,
+.hub-coming {
+  margin-top: 20px;
+
+  padding: 12px 24px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.hub-open {
+  background: #a60059;
+  color: white;
+}
+
+.hub-coming {
+  background: #eee;
+  color: #555;
+}
+
+@media (max-width: 800px) {
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-card {
+    min-height: 280px;
+  }
+}
