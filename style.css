@@ -1185,3 +1185,16 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+.philosopher-answer h2,
+.philosopher-answer h3,
+.philosopher-answer h4 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #241e44;
+}
+
+.philosopher-answer p {
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 8px 0 16px;
+}
