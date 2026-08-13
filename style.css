@@ -863,3 +863,143 @@ textarea:focus {
     min-height: 280px;
   }
 }
+/* =========================
+   PEEKING DR ETHOS
+========================= */
+
+.peek-robot {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+
+  width: 190px;
+  height: 155px;
+
+  opacity: 0;
+
+  transition:
+    transform 0.7s ease,
+    opacity 0.4s ease;
+}
+
+.peek-head {
+  width: 190px;
+  height: 145px;
+
+  padding: 14px;
+
+  border-radius: 58px;
+
+  background: linear-gradient(145deg, #ffffff, #d4d4d4);
+
+  border: 4px solid #b8b8b8;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.peek-face {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 46px;
+
+  background:
+    radial-gradient(circle at center, #15354c, #07151d);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.peek-eyes {
+  display: flex;
+  gap: 38px;
+}
+
+.peek-eyes span {
+  width: 32px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: #e5faff;
+
+  animation: peekBlink 4s infinite;
+}
+
+.peek-mouth {
+  width: 50px;
+  height: 20px;
+
+  margin-top: 14px;
+
+  border-bottom: 5px solid #e5faff;
+  border-radius: 50%;
+}
+
+@keyframes peekBlink {
+  0%, 45%, 48%, 100% {
+    transform: scaleY(1);
+  }
+
+  46%, 47% {
+    transform: scaleY(0.08);
+  }
+}
+
+
+/* LEFT PEEK */
+
+.peek-robot.peek-left {
+  left: -155px;
+  top: 25%;
+  transform: rotate(12deg);
+}
+
+.peek-robot.peek-left.show {
+  opacity: 1;
+  transform: translateX(125px) rotate(12deg);
+}
+
+
+/* RIGHT PEEK */
+
+.peek-robot.peek-right {
+  right: -155px;
+  top: 35%;
+  transform: rotate(-12deg);
+}
+
+.peek-robot.peek-right.show {
+  opacity: 1;
+  transform: translateX(-125px) rotate(-12deg);
+}
+
+
+/* BOTTOM LEFT */
+
+.peek-robot.peek-bottom-left {
+  left: 10%;
+  bottom: -130px;
+  transform: rotate(-5deg);
+}
+
+.peek-robot.peek-bottom-left.show {
+  opacity: 1;
+  transform: translateY(-100px) rotate(-5deg);
+}
+
+
+/* BOTTOM RIGHT */
+
+.peek-robot.peek-bottom-right {
+  right: 10%;
+  bottom: -130px;
+  transform: rotate(5deg);
+}
+
+.peek-robot.peek-bottom-right.show {
+  opacity: 1;
+  transform: translateY(-100px) rotate(5deg);
+}
