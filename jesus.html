@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What Would Jesus Say?</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="jesus-page">
+
+    <a href="index.html" class="home-button">← Back to RE Hub</a>
+
+    <header class="jesus-header">
+      <h1>What Would Jesus Say?</h1>
+      <p>
+        Ask a moral or ethical question and explore how the teachings of Jesus could apply.
+      </p>
+    </header>
+
+    <section class="jesus-question-box">
+
+      <label for="jesusQuestion">
+        Ask your question
+      </label>
+
+      <textarea
+        id="jesusQuestion"
+        placeholder="For example: Should we forgive someone who has seriously hurt us?"
+      ></textarea>
+
+      <button id="askJesusButton">
+        Ask
+      </button>
+
+    </section>
+
+    <section id="jesusAnswer" class="jesus-answer hidden">
+
+      <h2>What Would Jesus Say?</h2>
+
+      <div id="jesusAnswerText"></div>
+
+    </section>
+
+  </main>
+
+  <script src="jesus.js"></script>
+
+</body>
+
+</html>
