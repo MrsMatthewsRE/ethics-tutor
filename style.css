@@ -1198,3 +1198,158 @@ textarea:focus {
   line-height: 1.55;
   margin: 8px 0 16px;
 }
+/* =========================
+   WHAT WOULD JESUS SAY
+========================= */
+
+.jesus-page {
+  min-height: 100vh;
+  padding: 50px 30px;
+
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.9), transparent 35%),
+    linear-gradient(180deg, #f8edf2 0%, #f1e3e8 100%);
+
+  text-align: center;
+}
+
+.jesus-header {
+  width: min(900px, 92%);
+  margin: 0 auto 35px;
+}
+
+.jesus-header h1 {
+  margin: 0;
+
+  font-size: clamp(46px, 6vw, 82px);
+
+  color: #b00060;
+
+  text-shadow:
+    0 4px 0 white,
+    0 7px 10px rgba(0,0,0,0.18);
+}
+
+.jesus-header p {
+  margin-top: 14px;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  color: #241e44;
+}
+
+.jesus-question-box {
+  width: min(760px, 92%);
+  margin: 0 auto;
+
+  padding: 28px;
+
+  background: white;
+
+  border: 4px solid #b00060;
+  border-radius: 28px;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.14);
+}
+
+.jesus-question-box label {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  font-weight: 900;
+
+  color: #8e0050;
+}
+
+.jesus-question-box textarea {
+  width: 100%;
+  min-height: 140px;
+
+  box-sizing: border-box;
+
+  padding: 18px;
+
+  resize: vertical;
+
+  font: inherit;
+  font-size: 18px;
+
+  border: 2px solid #bbb;
+  border-radius: 18px;
+
+  outline: none;
+}
+
+.jesus-question-box textarea:focus {
+  border-color: #b00060;
+
+  box-shadow:
+    0 0 0 4px rgba(176,0,96,0.12);
+}
+
+#askJesusButton {
+  width: 100%;
+
+  margin-top: 18px;
+  padding: 16px;
+
+  border: none;
+  border-radius: 16px;
+
+  background:
+    linear-gradient(135deg, #8c004d, #c90069);
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+#askJesusButton:hover {
+  transform: translateY(-2px);
+}
+
+.jesus-answer {
+  width: min(820px, 92%);
+
+  margin: 35px auto 0;
+  padding: 30px;
+
+  background: white;
+
+  border: 3px solid #b00060;
+  border-radius: 25px;
+
+  text-align: left;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.14);
+}
+
+.jesus-answer h2 {
+  margin-top: 0;
+
+  color: #b00060;
+}
+
+.jesus-answer h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  color: #241e44;
+}
+
+.jesus-answer p {
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.jesus-answer.hidden {
+  display: none;
+}
