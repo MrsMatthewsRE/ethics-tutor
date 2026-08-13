@@ -44,9 +44,10 @@ body {
 
 .ethics-layout {
   display: grid;
-  grid-template-columns: 270px 1fr 270px;
-  gap: 30px;
-  align-items: start;
+  grid-template-columns: 320px minmax(520px, 1fr) 320px;
+  gap: 20px;
+  align-items: center;
+  min-height: 700px;
 }
 
 
