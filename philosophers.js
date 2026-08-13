@@ -56,9 +56,11 @@ philosopherButtons.forEach((button) => {
 
       const data = await response.json();
 
-      philosopherAnswerText.textContent =
-        data.answer ||
-        "Sorry, I couldn't generate an answer.";
+      philosopherAnswerText.innerHTML =
+  formatPhilosopherAnswer(
+    data.answer ||
+    "Sorry, I couldn't generate an answer."
+  );
 
     } catch (error) {
 
@@ -71,3 +73,14 @@ philosopherButtons.forEach((button) => {
   });
 
 });
+function formatPhilosopherAnswer(text) {
+  return text
+    .replace(/^### (.*)$/gm, "<h4>$1</h4>")
+    .replace(/^## (.*)$/gm, "<h3>$1</h3>")
+    .replace(/^# (.*)$/gm, "<h2>$1</h2>")
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\n\n/g, "</p><p>")
+    .replace(/\n/g, "<br>")
+    .replace(/^/, "<p>")
+    .replace(/$/, "</p>");
+}
