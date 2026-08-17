@@ -1746,3 +1746,7 @@ textarea:focus {
   font-weight: 400;
   letter-spacing: 1px;
 }
+.ethie-page-title {
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-weight: 400;
+}
