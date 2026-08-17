@@ -1708,11 +1708,35 @@ textarea:focus {
   position: relative;
 }
 
-.corner-logo {
+.hub {
+  position: relative;
+}
+
+/* Royal School Dungannon logo - top left */
+.corner-logo-left {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 110px;
+  top: 18px;
+  left: 18px;
+
+  width: 220px;
   height: auto;
+
   z-index: 20;
+}
+
+/* RSD RS Dept girls logo - top right */
+.corner-logo-right {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 105px;
+  height: auto;
+
+  z-index: 20;
+}
+
+/* Keep the title clear of the corner logos */
+.hub-header {
+  padding-top: 75px;
 }
