@@ -1704,3 +1704,15 @@ textarea:focus {
   background: transparent;
   border-radius: 0;
 }
+.hub {
+  position: relative;
+}
+
+.corner-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 110px;
+  height: auto;
+  z-index: 20;
+}
