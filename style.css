@@ -1740,3 +1740,9 @@ textarea:focus {
 .hub-header {
   padding-top: 75px;
 }
+.ethie-title {
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
