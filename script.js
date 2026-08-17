@@ -56,7 +56,7 @@ function startThinking(name) {
   robot.classList.add("thinking");
 
   robotStatus.textContent =
-    `Dr Ethos is thinking about ${name}...`;
+    `Little Ethie is thinking about ${name}...`;
 }
 
 
@@ -157,7 +157,7 @@ await fetch(API_URL, {
       "Something went wrong.";
 
     answerBox.textContent =
-      "Sorry, Dr Ethos couldn't answer that question. Please try again.";
+      "Sorry, Little Ethie couldn't answer that question. Please try again.";
 
     answerSection.classList.remove(
       "hidden"
@@ -286,7 +286,7 @@ readButton.addEventListener(
       );
 
       robotStatus.textContent =
-        "Dr Ethos is reading...";
+        "Little Ethie is reading...";
     };
 
 
